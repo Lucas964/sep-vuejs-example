@@ -1,9 +1,10 @@
 <template>
   <div>
-    <input type="text" v-model="message"></input>
-    <button v-on:click="toggle">Toggle visibility</button>
-
-    <p v-if="visible">{{message}}</p>
+    <ul v-for="todo in todos" v-bind:key="todo">
+      <li>{{todo}}</li>
+    </ul>
+    <input type="text" v-model="newTodo" placeholder="Todo"></input>
+    <button v-on:click="addTodo">Add Todo</button>
   </div>
 </template>
 
@@ -12,13 +13,17 @@ export default {
   name: 'app',
   data: () => {
     return {
-      message: "Hello World",
-      visible: true
+      todos: [],
+      newTodo: ""
     }
   },
   methods: {
-    toggle() {
-      this.visible = !this.visible;
+    addTodo() {
+      if (this.newTodo){
+        this.todos.push(this.newTodo);
+        this.todo = "";
+      }
+      
     }
   }
 }
