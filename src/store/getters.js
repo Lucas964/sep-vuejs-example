@@ -1,0 +1,1 @@
+export const blogposts = state => state.blogposts
