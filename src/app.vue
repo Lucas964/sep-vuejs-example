@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <ul v-for="todo in todos" v-bind:key="todo">
       <li>{{todo}}</li>
     </ul>
@@ -21,7 +21,7 @@ export default {
     addTodo() {
       if (this.newTodo){
         this.todos.push(this.newTodo);
-        this.todo = "";
+        this.newTodo = "";
       }
       
     }
@@ -30,4 +30,7 @@ export default {
 </script>
 
 <style>
+.container {
+  padding: 10px;
+}
 </style>
