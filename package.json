@@ -8,10 +8,11 @@
     "build": "npm run clean && NODE_ENV=production webpack -p --hide-modules --progress"
   },
   "author": "cbikar@liveperson.com",
-  "dependencies": {
-    "vue": "^2.4.2"
-  },
   "devDependencies": {
+    "vue": "^2.4.2",
+    "vue-material": "^0.7.5",
+    "material-design-icons-iconfont": "^3.0.3",
+    "roboto-fontface": "^0.7.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
