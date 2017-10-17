@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <ul v-for="todo in todos" v-bind:key="todo">
-      <li>{{todo}}</li>
+    <ul>
+      <li v-for="todo in todos" v-bind:key="todo">{{todo}}</li>
     </ul>
     <input type="text" v-model="newTodo" placeholder="Todo"></input>
     <button v-on:click="addTodo">Add Todo</button>
