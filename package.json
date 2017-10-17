@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "dev": "npm run clean && webpack-dev-server -d --open --progress",
-    "build": "npm run clean && NODE_ENV=production webpack -p --hide-modules --progress"
+    "build": "npm run clean && NODE_ENV=production webpack --hide-modules --progress"
   },
   "author": "cbikar@liveperson.com",
   "devDependencies": {
